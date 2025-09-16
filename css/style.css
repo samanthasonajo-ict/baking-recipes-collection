@@ -40,3 +40,50 @@ footer {
   padding: 10px;
   margin-top: 20px;
 }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* <-- ito magce-center */
+  background: #f8b400;
+}
+
+nav ul li {
+  position: relative;
+  margin: 0 10px; 
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: #e69500;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #f8b400;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+.dropdown-content li a {
+  padding: 10px;
+  display: block;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
