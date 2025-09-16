@@ -8,14 +8,16 @@
 </head>
 <body>
   <header>
+    <br>
     <h1>Contact Us</h1>
+    <br> <br>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html" class="active">CONTACT</a></li>
         <li class="dropdown">
-          <a href="#">Recipes ▾</a>
+          <a href="#">RECIPES ▾</a>
           <ul class="dropdown-content">
             <li><a href="recipes/cake.html">Cake</a></li>
             <li><a href="recipes/cookies.html">Cookies</a></li>
@@ -33,7 +35,20 @@
 
   <main>
     <h2>Get in Touch</h2>
-    <p>If you’d like to share your baking creations or ask about recipes, feel free to contact me at <a href="mailto:example@email.com">example@email.com</a>.</p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="6" required></textarea><br><br>
+
+      <button type="submit">Send</button>
+    </form>
+    <p>If you have any questions, suggestions, or just want to say hello, feel free to reach out! We value your feedback and would love to hear from you.</
+    </p>
   </main>
 
   <footer>
