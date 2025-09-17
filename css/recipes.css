@@ -1,0 +1,95 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+  margin: 0;
+  padding: 0;
+  background: #fffaf0; /* light warm bg para sa recipe pages */
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #264653;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: #f8b400;
+}
+
+nav ul li {
+  position: relative;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: rgb(32, 6, 6);
+  font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: #e6ded1;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #f8b400;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+.dropdown-content li a {
+  padding: 15px;
+  display: block;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Main content area */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffffd9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main h1 {
+  color: #b85c38;
+  text-align: center;
+}
+
+.recipe-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+footer {
+  background: #264653;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
