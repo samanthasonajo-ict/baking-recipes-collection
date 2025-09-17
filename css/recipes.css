@@ -3,14 +3,14 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
   margin: 0;
   padding: 0;
-  background: #fffaf0; /* light warm bg para sa recipe pages */
+  background: #f5eddd; /* light warm bg para sa recipe pages */
   color: #333;
   line-height: 1.6;
 }
 
 header {
-  background: #264653;
-  color: white;
+  background: #9cd4ea;
+  color: rgb(6, 6, 6);
   padding: 20px;
   text-align: center;
 }
@@ -87,7 +87,7 @@ main h1 {
 }
 
 footer {
-  background: #264653;
+  background: #9cd4ea;
   color: white;
   text-align: center;
   padding: 15px;
