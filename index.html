@@ -7,12 +7,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <header>
     <br>
     <h1>BAKING RECIPES COLLECTION</h1> <br>
     <div class="header-image">
-    <img src="images/header.jpg" alt="Baking Background">
-  </div>
+      <img src="images/header.jpg" alt="Baking Background">
+    </div>
     <nav>
       <ul>
         <li><a href="index.html">HOME</a></li>
@@ -23,13 +24,13 @@
           <a href="#">RECIPES ▾</a>
           <ul class="dropdown-content">
             <li><a href="pages/cake.html">Cake</a></li>
-        <li><a href="pages/cookies.html">Cookies</a></li>
-        <li><a href="pages/bread.html">Bread</a></li>
-        <li><a href="pages/muffins.html">Muffins</a></li>
-        <li><a href="pages/brownies.html">Brownies</a></li>
-        <li><a href="pages/pies.html">Pies</a></li>
-        <li><a href="pages/tarts.html">Tarts</a></li>
-        <li><a href="pages/cupcakes.html">Cupcakes</a></li>
+            <li><a href="pages/cookies.html">Cookies</a></li>
+            <li><a href="pages/bread.html">Bread</a></li>
+            <li><a href="pages/muffins.html">Muffins</a></li>
+            <li><a href="pages/brownies.html">Brownies</a></li>
+            <li><a href="pages/pies.html">Pies</a></li>
+            <li><a href="pages/tarts.html">Tarts</a></li>
+            <li><a href="pages/cupcakes.html">Cupcakes</a></li>
           </ul>
         </li>
       </ul>
@@ -39,7 +40,7 @@
   <main>
     <section>
       <h2>Welcome to the Baking Recipes Collection</h2>
-      <img src="images/baking-home.jpg" alt="Assorted baked goods on a table">
+      <img src="images/baking-home.jpg" alt="Assorted baked goods on a table"> <br><br>
       <p>
         This website is a curated collection of baking recipes designed to inspire 
         both beginners and experienced bakers. From soft and fluffy cakes to 
@@ -52,6 +53,23 @@
 
   <footer>
     <p>&copy; 2025 Baking Recipes Collection</p>
+    <button id="backToTop">↑ Back to Top</button>
   </footer>
+
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>

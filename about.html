@@ -4,14 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - Baking Recipes Collection</title>
-  <meta name="description" content="Learn about the Baking Recipes Collection project—created to inspire home bakers with easy, fun, and delicious recipes.">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* FAQ styles */
+    .faq {
+      margin-top: 30px;
+    }
+    .faq h2 {
+      margin-bottom: 15px;
+    }
+    .faq-item {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      background: #fff7d1;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .faq-item:hover {
+      background: #ffeaa7;
+    }
+    .faq-item h3 {
+      margin: 0;
+      font-size: 1.1em;
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      margin-top: 5px;
+      font-size: 0.95em;
+      color: #333;
+      padding: 0 5px;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 200px; /* enough space for text */
+      padding: 8px 5px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <br>
     <h1>About Us</h1>
-    <br> <br>
+    <br><br>
     <nav>
       <ul>
         <li><a href="index.html">HOME</a></li>
@@ -38,29 +75,53 @@
   <main>
     <h1>About Baking Recipes Collection</h1>
     <p>
-      The <strong>Baking Recipes Collection</strong> was created as a simple yet meaningful 
-      project to bring together some of the most loved baked treats in one cozy space.  
-      What started as a small idea—to share easy, no-fail recipes—soon grew into a fun project
-      for anyone who loves the smell of freshly baked bread, the sweetness of homemade cookies,
-      or the comfort of a slice of cake shared with family and friends.
+      This Baking Recipes Collection was created as a simple yet meaningful 
+      project to gather some of the most loved baking recipes in one place. 
+      The idea is to make baking approachable, fun, and enjoyable for anyone, 
+      regardless of their skill level. Each page contains step-by-step 
+      instructions, ingredients, and tips to ensure successful results.
     </p>
-    <p>
-      Each recipe in this collection is carefully written with clear steps, helpful tips, and
-      a sprinkle of inspiration. Whether you’re a beginner trying out your first muffin or a 
-      seasoned home baker experimenting with pies and tarts, this website is meant to be your
-      companion in the kitchen. We believe that baking is more than just mixing ingredients—it’s 
-      about creating memories, sharing joy, and expressing creativity.
-    </p>
-    <p>
-      Our goal is to inspire you to tie on an apron, preheat the oven, and discover the happiness 
-      that comes with baking from scratch. From cakes that make birthdays extra special to simple 
-      breads that warm your mornings, there’s something here for everyone. We hope you enjoy browsing, 
-      learning, and most importantly, baking!
-    </p>
+
+    <!-- ✅ FAQ Section -->
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      
+      <div class="faq-item">
+        <h3>Do I need special equipment to start baking?</h3>
+        <div class="faq-answer">
+          <p>Not really! Basic tools like a mixing bowl, whisk, spatula, and oven are enough to get started. As you improve, you can add more equipment.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I substitute ingredients in the recipes?</h3>
+        <div class="faq-answer">
+          <p>Yes, many recipes allow substitutions (e.g., butter → margarine, sugar → honey). We include tips where substitutions work best.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3>Are the recipes beginner-friendly?</h3>
+        <div class="faq-answer">
+          <p>Definitely! Each recipe is written with simple instructions so even first-time bakers can succeed.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Baking Recipes Collection</p>
   </footer>
+
+  <!-- ✅ FAQ Toggle Script -->
+  <script>
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+      item.addEventListener("click", () => {
+        item.classList.toggle("active");
+      });
+    });
+  </script>
 </body>
 </html>
