@@ -5,6 +5,7 @@ body {
   padding: 0;
   background: #ffee8b;
   color: #333;
+  
 }
 
 header {
@@ -62,7 +63,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center; /* <-- ito magce-center */
+  justify-content: center;
   background: #f8b400;
 }
 
@@ -95,15 +96,7 @@ nav ul li a.active {
   z-index: 1000;
 }
 
-/* .dropdown-content li a {
-  padding: 20px;
-  display: block;
-  color: white;
-}
 
-*/
-
-/* Dropdown menu (compact version) */
 .dropdown-content {
   display: none;
   position: absolute;
