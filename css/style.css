@@ -28,7 +28,7 @@ header {
 /* Sidebar nav */
 .sidebar {
   width: 220px;
-  background: #f8b400;
+  background: #9cd4ea;
   padding: 15px;
 }
 
@@ -54,11 +54,12 @@ header {
   text-decoration: none;
   color: rgb(32, 6, 6);
   font-weight: bold;
+  font-size: 15px;
 }
 
 .sidebar ul li a:hover,
 .sidebar ul li a.active {
-  background: #e6ded1;
+  background: #ffee8b;
 }
 
 /* Dropdown inside sidebar */
@@ -88,7 +89,6 @@ header {
 
 
 
-/* Back-to-top button */
 #backToTop {
   display: none;
   position: fixed;
