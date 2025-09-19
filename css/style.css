@@ -85,8 +85,10 @@ header {
 
 /* Footer */
 footer {
+  background: #264653;
   color: white;
   text-align: center;
+  padding: 10px;
 }
 
 /* Back-to-top button */
