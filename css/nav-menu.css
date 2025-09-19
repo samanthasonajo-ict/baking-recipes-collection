@@ -12,11 +12,23 @@ body {
 
 /* Header */
 header {
-  background: #264653;
-  color: white;
+  background: #9cd4ea;
+  color: rgb(52, 74, 80);
   padding: 15px;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+  font-family: monospace;
+}
+
+section {
+  text-align: center;   /* para ma-center text at inline elements */
+  padding: 20px;
+}
+
+section img {
+  display: block;
+  margin: 15px auto;   /* auto margin para nasa gitna ang image */
+  max-width: 50%;
+  height: auto;
 }
 
 /* Container layout (sidebar + content) */
@@ -86,7 +98,19 @@ header {
   background: #fff;
 }
 
-
+/* Footer */
+footer {
+  background: #9cd4ea;
+  color: rgb(37, 45, 47);
+  text-align: center;
+  padding: 12px;
+  position: fixed;   /* laging visible */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3); /* shadow sa itaas */
+  z-index: 1000; /* siguradong nasa ibabaw */
+}
 
 /* Back-to-top button */
 #backToTop {
