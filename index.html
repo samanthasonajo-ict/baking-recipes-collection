@@ -9,50 +9,40 @@
 <body>
 
   <header>
-    <br>
-    <h1>BAKING RECIPES COLLECTION</h1> <br>
-    <div class="header-image">
-      <img src="images/header.jpg" alt="Baking Background">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="credits.html">CREDITS</a></li>
-        <li class="dropdown">
-          <a href="#">RECIPES ▾</a>
-          <ul class="dropdown-content">
-            <li><a href="pages/cake.html">Cake</a></li>
-            <li><a href="pages/cookies.html">Cookies</a></li>
-            <li><a href="pages/bread.html">Bread</a></li>
-            <li><a href="pages/muffins.html">Muffins</a></li>
-            <li><a href="pages/brownies.html">Brownies</a></li>
-            <li><a href="pages/pies.html">Pies</a></li>
-            <li><a href="pages/tarts.html">Tarts</a></li>
-            <li><a href="pages/cupcakes.html">Cupcakes</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+    <h1>BAKING RECIPES COLLECTION</h1>
+    <p>Your go-to source for delicious baking recipes!</p>
   </header>
 
-  <main>
-    <section>
-      <h2>Welcome to the Baking Recipes Collection</h2>
-      <img src="images/home.jpg" alt="Assorted baked goods on a table"> <br><br>
-      <p>
-        This website is a curated collection of baking recipes designed to inspire 
-        both beginners and experienced bakers. From soft and fluffy cakes to 
-        crunchy cookies, from wholesome bread to decadent brownies, there is 
-        something here for everyone. Each recipe is explained in simple steps 
-        so you can follow along easily, even if this is your first time baking. 
-      </p>
-    </section>
-  </main>
+  <div class="container">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+      <ul>
+        <li><a href="home.html" target="content-frame">Home</a></li>
+        <li><a href="about.html" target="content-frame">About</a></li>
+        <li><a href="contact.html" target="content-frame">Contact</a></li>
+        <li>Recipes
+          <ul>
+            <li><a href="pages/cake.html" target="content-frame">Cake</a></li>
+            <li><a href="pages/cookies.html" target="content-frame">Cookies</a></li>
+            <li><a href="pages/bread.html" target="content-frame">Bread</a></li>
+            <li><a href="pages/muffins.html" target="content-frame">Muffins</a></li>
+            <li><a href="pages/brownies.html" target="content-frame">Brownies</a></li>
+            <li><a href="pages/pies.html" target="content-frame">Pies</a></li>
+            <li><a href="pages/tarts.html" target="content-frame">Tarts</a></li>
+            <li><a href="pages/cupcakes.html" target="content-frame">Cupcakes</a></li>
+          </ul>
+        </li>
+        <li><a href="credits.html" target="content-frame">Credits</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+      <iframe name="content-frame" src="home.html"></iframe>
+    </main>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Baking Recipes Collection</p>
     <button id="backToTop">↑ Back to Top</button>
   </footer>
 
