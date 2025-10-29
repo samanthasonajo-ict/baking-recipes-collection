@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brownie Recipes - Baking Recipes Collection</title>
+  <meta name="description" content="Fudgy and chewy brownie recipes, from classic chocolate to nutty variations.">
+  <link rel="stylesheet" href="../css/recipes.css">
+</head>
+<body>
+  <header>
+    <h1>BROWNIES RECIPES</h1>
+    <nav>
+      <ul>
+        <li><a href="cake.html">Cake</a></li>
+        <li><a href="cookies.html">Cookies</a></li>
+        <li><a href="bread.html">Bread</a></li>
+        <li><a href="muffins.html">Muffins</a></li>
+        <li><a href="brownies.html">Brownies</a></li>
+        <li><a href="pies.html">Pies</a></li>
+        <li><a href="tarts.html">Tarts</a></li>
+        <li><a href="cupcakes.html">Cupcakes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Classic Fudgy Brownies</h2>
+      <img src="../images/brownies.jpg" alt="Stack of fudgy chocolate brownies" width="400" class="recipe-image">
+
+      <h3>Introduction</h3>
+      <p>
+        Brownies are the ultimate chocolate indulgence, and this recipe leans toward the fudgy side rather than cakey.
+        They’re dense, chewy, and full of chocolate flavor. The secret is melted butter and cocoa, plus just enough
+        flour to hold them together. I love adding a handful of chopped nuts or chocolate chunks for extra texture.
+        These brownies taste great on their own, but you can also serve them warm with ice cream for a quick dessert.
+        The best part? They only take about 10 minutes to prepare before baking. If you’re looking for a reliable,
+        crowd-pleasing recipe, this one delivers every single time.
+      </p>
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>1/2 cup butter, melted</li>
+        <li>1 cup sugar</li>
+        <li>2 large eggs</li>
+        <li>1 tsp vanilla extract</li>
+        <li>1/3 cup cocoa powder</li>
+        <li>1/2 cup flour</li>
+        <li>1/4 tsp salt</li>
+        <li>1/4 tsp baking powder</li>
+      </ul>
+
+      <h3>Instructions</h3>
+      <ol>
+        <li>Preheat oven to 350°F (175°C). Grease a square baking pan.</li>
+        <li>Mix melted butter, sugar, eggs, and vanilla until smooth.</li>
+        <li>Sift in cocoa, flour, salt, and baking powder. Stir gently until combined.</li>
+        <li>Pour into prepared pan and bake 20–25 minutes. Do not overbake; center should be slightly soft.</li>
+        <li>Cool completely before cutting into squares. Store in an airtight container.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <a href="../home.html">Back to Home</a>
+    <button id="backToTop">↑ Back to Top</button>
+  </footer>
+
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

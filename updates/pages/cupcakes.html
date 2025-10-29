@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cupcake Recipes - Baking Recipes Collection</title>
+  <meta name="description" content="Easy and creative cupcake recipes for moist, flavorful cupcakes plus frosting ideas and tips.">
+  <link rel="stylesheet" href="../css/recipes.css">
+</head>
+<body>
+  <header>
+    <h1>CUPCAKE RECIPES</h1>
+    <nav>
+      <ul>
+        <li><a href="cake.html">Cake</a></li>
+        <li><a href="cookies.html">Cookies</a></li>
+        <li><a href="bread.html">Bread</a></li>
+        <li><a href="muffins.html">Muffins</a></li>
+        <li><a href="brownies.html">Brownies</a></li>
+        <li><a href="pies.html">Pies</a></li>
+        <li><a href="tarts.html">Tarts</a></li>
+        <li><a href="cupcakes.html">Cupcakes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Classic Vanilla Cupcakes (with easy buttercream)</h2>
+      <img src="../images/Vanilla Cupcakes with Sweet Buttercream Frosting.jpg" alt="Tray of vanilla cupcakes with buttercream swirls" class="recipe-image" width="400">
+      <h3>Introduction</h3>
+      <p>
+        Cupcakes are the perfect little celebration in one bite. These classic vanilla cupcakes are soft,
+        moist, and reliably tasty — great for beginners and busy students who want a quick, crowd-pleasing
+        dessert. The batter is simple and forgiving: you cream butter and sugar, add eggs and vanilla,
+        then fold in dry ingredients with milk. After a quick bake, top with a simple buttercream and
+        you have an attractive treat. I like these because they’re easy to portion, decorate, and pack
+        for school events or picnics. They also offer endless variation possibilities: swap vanilla for
+        lemon zest, fold in berries, or add cocoa for chocolate cupcakes.
+      </p>
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>1 1/2 cups all-purpose flour</li>
+        <li>1 cup sugar</li>
+        <li>1/2 cup butter, softened</li>
+        <li>2 large eggs</li>
+        <li>1/2 cup milk</li>
+        <li>2 tsp baking powder</li>
+        <li>1 tsp vanilla extract</li>
+        <li>Pinch of salt</li>
+      </ul>
+
+      <h3>Instructions</h3>
+      <ol>
+        <li>Preheat oven to 350°F (175°C). Line a muffin tin with paper cups.</li>
+        <li>Cream butter and sugar until light. Add eggs one at a time, then vanilla.</li>
+        <li>Sift flour, baking powder, and salt. Alternate adding dry mix and milk to the butter mix; fold gently.</li>
+        <li>Fill cups 2/3 full and bake 15–18 minutes or until a toothpick comes out clean.</li>
+        <li>Cool 10 minutes in pan, transfer to rack. Prepare buttercream (butter + powdered sugar + milk + vanilla) and pipe on cooled cupcakes.</li>
+        <li>Decorate as you like — sprinkles, zest, or a small fruit make nice finishing touches.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <a href="../home.html">Back to Home</a>
+    <button id="backToTop">↑ Back to Top</button>
+  </footer>
+
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

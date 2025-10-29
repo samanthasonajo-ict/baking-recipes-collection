@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Baking Recipes Collection</title>
+  <meta name="description" content="Get in touch with Baking Recipes Collection. Share feedback, recipe ideas, or simply say hello to our baking community.">
+  <link rel="stylesheet" href="css/nav-menu.css">
+</head>
+<body>
+  <header>
+    <h1>CONTACT</h1>
+  </header>
+
+  <main>
+    <h1>We’d Love to Hear from You!</h1>
+    <p>
+      Baking is best enjoyed when shared, and we’d be thrilled to hear your thoughts, 
+      feedback, and ideas. Whether you’ve tried one of our recipes and want to share 
+      your success story, or you have a suggestion for what we should feature next, 
+      your message is always welcome. Every comment helps us grow and keeps this 
+      project full of fresh inspiration.
+    </p>
+    <p>
+      Got a recipe passed down from your grandmother? Or maybe a baking tip that 
+      always saves the day? We’d love to include contributions from our readers. 
+      Baking is a community, after all, and each story adds another sprinkle of 
+      warmth to our collection. Don’t hesitate to reach out and become part of 
+      our growing circle of bakers.
+    </p>
+    <p>
+      You can contact us through the simple form below. Just fill in your name, 
+      email, and message, then click send. No backend is needed for this demo, 
+      but we want the experience to feel as close to real as possible.
+    </p>
+
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Baking Recipes Collection</p>
+    <button id="backToTop">↑ Back to Top</button>
+  </footer>
+
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+  
+</body>
+</html>

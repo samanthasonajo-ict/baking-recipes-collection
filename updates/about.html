@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Baking Recipes Collection</title>
+  <link rel="stylesheet" href="css/nav-menu.css">
+  <style>
+    /* FAQ styles */
+    .faq {
+      margin-top: 30px;
+    }
+    .faq h2 {
+      margin-bottom: 15px;
+    }
+    .faq-item {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      background: #fff7d1;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .faq-item:hover {
+      background: #ffeaa7;
+    }
+    .faq-item h3 {
+      margin: 0;
+      font-size: 1.1em;
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      margin-top: 5px;
+      font-size: 0.95em;
+      color: #333;
+      padding: 0 5px;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 200px; /* enough space for text */
+      padding: 8px 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ABOUT US</h1>
+  </header>
+  
+  <main>
+    <h1>About Baking Recipes Collection</h1>
+    <p>
+      This Baking Recipes Collection was created as a simple yet meaningful 
+      project to gather some of the most loved baking recipes in one place. 
+      The idea is to make baking approachable, fun, and enjoyable for anyone, 
+      regardless of their skill level. Each page contains step-by-step 
+      instructions, ingredients, and tips to ensure successful results.
+    </p>
+    <p>
+      Whether you are a beginner looking to try your hand at baking for the 
+      first time, or an experienced baker searching for new ideas, this 
+      collection aims to inspire and guide you. Baking is more than just 
+      following a recipe; it's about creativity, patience, and the joy of 
+      sharing delicious treats with loved ones. We hope this collection 
+      brings a little sweetness into your life!
+    </p>
+
+    <!-- ✅ FAQ Section -->
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      
+      <div class="faq-item">
+        <h3>Do I need special equipment to start baking?</h3>
+        <div class="faq-answer">
+          <p>Not really! Basic tools like a mixing bowl, whisk, spatula, and oven are enough to get started. As you improve, you can add more equipment.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I substitute ingredients in the recipes?</h3>
+        <div class="faq-answer">
+          <p>Yes, many recipes allow substitutions (e.g., butter → margarine, sugar → honey). We include tips where substitutions work best.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3>Are the recipes beginner-friendly?</h3>
+        <div class="faq-answer">
+          <p>Definitely! Each recipe is written with simple instructions so even first-time bakers can succeed.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Baking Recipes Collection</p>
+    <button id="backToTop">↑ Back to Top</button>
+  </footer>
+
+  <!-- ✅ FAQ Toggle Script -->
+  <script>
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+      item.addEventListener("click", () => {
+        item.classList.toggle("active");
+      });
+    });
+
+    const backToTop = document.getElementById("backToTop");
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+  
+</body>
+</html>

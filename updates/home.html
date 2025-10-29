@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Baking Recipes Collection</title>
+  <link rel="stylesheet" href="css/nav-menu.css">
+</head>
+<body>
+
+
+
+    <section>
+        <br>
+    <h2><strong>Welcome to the Baking Recipes Collection</strong></h2>
+    <p>Your go-to place for cakes, cookies, and more!</p> <br>
+    <img src="images/home.jpg" alt="Assorted baked goods on a table">
+    </section>
+    <section>
+    <p>
+      This website is a curated collection of baking recipes designed to inspire 
+      both beginners and experienced bakers. From soft and fluffy cakes to 
+      crunchy cookies, from wholesome bread to decadent brownies, there is 
+      something here for everyone. Each recipe is explained in simple steps 
+      so you can follow along easily, even if this is your first time baking. 
+    </p>
+    
+    <p>
+      <strong>Explore the sidebar to discover recipes for cakes, cookies, bread, muffins, 
+      brownies, pies, tarts, and cupcakes. Happy baking! </strong>
+    </p>
+    <br> 
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Baking Recipes Collection</p>
+    <button id="backToTop">↑ Back to Top</button>
+  </footer>
+
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Recipes - Baking Recipes Collection</title>
+  <meta name="description" content="Crispy and chewy cookie recipes including classic chocolate chip and creative mix-ins.">
+  <link rel="stylesheet" href="../css/recipes.css">
+</head>
+<body>
+  <header>
+    <h1>COOKIES RECIPES</h1>
+    <nav>
+      <ul>
+        <li><a href="cake.html">Cake</a></li>
+        <li><a href="cookies.html">Cookies</a></li>
+        <li><a href="bread.html">Bread</a></li>
+        <li><a href="muffins.html">Muffins</a></li>
+        <li><a href="brownies.html">Brownies</a></li>
+        <li><a href="pies.html">Pies</a></li>
+        <li><a href="tarts.html">Tarts</a></li>
+        <li><a href="cupcakes.html">Cupcakes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Classic Chocolate Chip Cookies</h2>
+      <img src="../images/Chocolate Chip Cookies! ___.jpg" alt="Fresh baked chocolate chip cookies on a tray" width="400" class="recipe-image">
+
+      <h3>Introduction</h3>
+      <p>
+        Chocolate chip cookies are the ultimate comfort food. They are quick to mix, easy to bake, and
+        universally loved. This version balances chewy centers with crisp edges, thanks to a mix of
+        white and brown sugar. I recommend chilling the dough for at least 30 minutes to deepen the
+        flavor and prevent spreading. You can also customize them with nuts, dried fruit, or different
+        types of chocolate. Fresh out of the oven, these cookies pair perfectly with a glass of milk or
+        a cup of coffee. Keep a jar nearby, and they’ll disappear faster than you expect.
+      </p>
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>2 1/4 cups all-purpose flour</li>
+        <li>1 tsp baking soda</li>
+        <li>1 tsp salt</li>
+        <li>1 cup butter, softened</li>
+        <li>3/4 cup sugar</li>
+        <li>3/4 cup brown sugar</li>
+        <li>2 large eggs</li>
+        <li>2 tsp vanilla extract</li>
+        <li>2 cups chocolate chips</li>
+      </ul>
+
+      <h3>Instructions</h3>
+      <ol>
+        <li>Preheat oven to 350°F (175°C). Line baking sheets with parchment paper.</li>
+        <li>Cream butter with both sugars until light. Beat in eggs and vanilla.</li>
+        <li>Whisk together flour, baking soda, and salt. Gradually mix into butter mixture.</li>
+        <li>Fold in chocolate chips. Chill dough 30 minutes for best texture.</li>
+        <li>Drop tablespoon-sized scoops onto baking sheets. Bake 10–12 minutes until golden on edges.</li>
+        <li>Cool slightly before transferring to a wire rack. Enjoy warm or store in an airtight container.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <a href="../home.html">Back to Home</a>
+    <button id="backToTop">↑ Back to Top</button>
+  </footer>
+
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bread Recipes - Baking Recipes Collection</title>
+  <meta name="description" content="Simple homemade bread recipes including soft white loaf and tips for kneading and proofing.">
+  <link rel="stylesheet" href="../css/recipes.css">
+</head>
+<body>
+  <header>
+    <h1>BREAD RECIPES</h1>
+    <nav>
+      <ul>
+        <li><a href="cake.html">Cake</a></li>
+        <li><a href="cookies.html">Cookies</a></li>
+        <li><a href="bread.html">Bread</a></li>
+        <li><a href="muffins.html">Muffins</a></li>
+        <li><a href="brownies.html">Brownies</a></li>
+        <li><a href="pies.html">Pies</a></li>
+        <li><a href="tarts.html">Tarts</a></li>
+        <li><a href="cupcakes.html">Cupcakes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Homemade White Bread Loaf</h2>
+      <img src="../images/bread-loaf.jpg" alt="Freshly baked homemade bread loaf" width="400" class="recipe-image">
+
+      <h3>Introduction</h3>
+      <p>
+        There is something incredibly satisfying about baking bread at home. The smell alone can make a house
+        feel warm and welcoming. This recipe is a beginner-friendly white loaf that gives you a soft inside
+        with a golden crust. The process is simple: mix, knead, proof, shape, and bake. The hardest part is
+        waiting for the dough to rise, but patience is rewarded with a loaf that tastes better than store-bought.
+        Once you try it, you’ll realize bread-making isn’t complicated — just a little practice and timing.
+        You can also use this base dough to create dinner rolls, garlic bread, or cinnamon swirl bread.
+      </p>
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>3 1/2 cups all-purpose flour</li>
+        <li>2 1/4 tsp instant yeast</li>
+        <li>1 cup warm water</li>
+        <li>2 tbsp sugar</li>
+        <li>2 tbsp butter, melted</li>
+        <li>1 tsp salt</li>
+      </ul>
+
+      <h3>Instructions</h3>
+      <ol>
+        <li>Mix warm water, sugar, and yeast. Let sit for 5 minutes until foamy.</li>
+        <li>Add flour, salt, and butter. Mix until dough forms.</li>
+        <li>Knead 8–10 minutes until smooth and elastic. Place in an oiled bowl, cover, and let rise 1 hour.</li>
+        <li>Punch down dough, shape into a loaf, and place in a greased pan. Let rise again 30–40 minutes.</li>
+        <li>Bake at 375°F (190°C) for 25–30 minutes until golden and hollow-sounding when tapped.</li>
+        <li>Cool before slicing to avoid a gummy texture.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <a href="../home.html">Back to Home</a>
+    <button id="backToTop">↑ Back to Top</button>
+  </footer>
+
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
